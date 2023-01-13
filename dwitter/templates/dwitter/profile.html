@@ -6,15 +6,15 @@
 
     <div class="block">
     <h1 class="title is-1">
-        {{profile.user.username|upper}}'s Dweets
+        {{profile.user.username|upper}} さん
     </h1>
     <div class="profile">
         <img src="{{ profile.user.account.account_image.url}}" alt="{{ account.account_image}}" class="card-img-top">
-        <p>{{profile.user.account.last_name}}　{{profile.user.account.first_name}}</p>
-        <p>{{profile.user.account.age}}</p>
-        <p>{{profile.user.account.area}}</p>
-        <p>{{profile.user.account.category}}</p>
-        <p>{{profile.user.account.hobby}}</p>
+        <p>名前：{{profile.user.account.last_name}}　{{profile.user.account.first_name}}</p>
+        <p>年齢：{{profile.user.account.age}}</p>
+        <p>出身地：{{profile.user.account.area}}</p>
+        <p>性別：{{profile.user.account.category}}</p>
+        <p>趣味：{{profile.user.account.hobby}}</p>
     </div>
     <form method="post">
         {% csrf_token %}

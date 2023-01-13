@@ -6,7 +6,7 @@
 
 <div class="column">
 
-    <p>いいね</p>
+    <h1>いいね❤受信一覧</h1>
 
 <div class="column">
     <div class="block">
@@ -16,8 +16,9 @@
                 <li>
                     <a href="{% url 'UserView' follower.user.id %} ">
                         <img src="{{ follower.user.account.account_image.url}}" alt="{{ follower.account.account_image}}" class="card-img-top">
-                        <p>{{ follower.user.account.last_name }}　{{ follower.user.account.first_name }}</p>
-                        <p>{{ follower.user.account.hobby }}</p>
+                        <p>ニックネーム：{{ follower.user.account.last_name }}　{{ follower.user.account.first_name }}</p>
+                        <p>趣味：{{ follower.user.account.hobby }}</p>
+                        <hr>
                     </a>
                 </li>
             {% endfor %}
